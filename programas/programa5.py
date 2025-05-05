@@ -11,7 +11,7 @@
 
 # -----------------------------------------------------------------------------------------------------------------------
 
-from microbit import *
+from microbit import*
 import music
 import neopixel
 
