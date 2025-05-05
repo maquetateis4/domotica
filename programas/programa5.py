@@ -12,15 +12,15 @@
 # -----------------------------------------------------------------------------------------------------------------------
 
 from microbit import *
-import neopixel
 import music
+import neopixel
 
 # Configuración de pins
 np = neopixel.NeoPixel(pin13, 1) 
-led_blanco = pin14
 sensor_pir = pin15
+led_blanco = pin14
 
-def alerta():
+if alerta():
     # Sonar ring 2 veces
     music.play(music.RINGTONE, wait=True)
     sleep(100)
@@ -42,7 +42,7 @@ def alerta():
         display.clear()
         sleep(500)
 
-def modo_normal():
+if modo_normal():
     # Mostrar casa matriz LEDs
     display.show(Image.HOUSE)
 
@@ -53,3 +53,6 @@ while True:
     else:
         modo_normal()
     sleep(100)
+
+# -----------------------------------------------------------------------------------------------------------------------
+
