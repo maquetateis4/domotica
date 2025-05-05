@@ -1,6 +1,13 @@
-"""Alejandro Vázquez Iglesias"""
-"""5/05/25"""
+"""Alejandro Vázquez Iglesias | MAQUETA TEIS 4"""
+"""Fecha: 5/05/25"""
+
 """Programa 5"""
+"""Simula un sistema de alarma con detección de movimiento"""
+"""Usa el pin 13 para un led neopixel"""
+"""Usa el pin 14 para un led blanco"""
+"""Lee el pin 15 digital para sensor PIR"""
+"""Hay una cara enfadada  cuando hay presencia"""
+"""Muestra una casa si no hay presencia"""
 
 # -----------------------------------------------------------------------------------------------------------------------
 
