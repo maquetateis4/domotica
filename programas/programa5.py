@@ -12,8 +12,8 @@
 # -----------------------------------------------------------------------------------------------------------------------
 
 from microbit import*
-import music
 import neopixel
+import music
 
 # Configuración de pins
 np = neopixel.NeoPixel(pin13, 1) 
