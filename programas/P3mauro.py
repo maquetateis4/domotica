@@ -1,6 +1,6 @@
-"""Programa completo da fila 4 para a maqueta domótica. 
-"Autores: Alejandro Vázquez, Mauro"
-"Data: 5/5/25"
+"""Programa completo da fila 4 para a maqueta domótica."""
+"Autores: Mauro"""
+"Data: 5/5/25"""
 
 # -----------------------------------------------------------------------------------------------------------------------
 
