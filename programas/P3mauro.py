@@ -1,4 +1,4 @@
-"""Programa completo da fila 4 para a maqueta domótica."""
+"""Programa completo da fila 3 para a maqueta domótica."""
 "Autor: Mauro"""
 "Data: 5/5/25"""
 
