@@ -12,7 +12,7 @@ np = neopixel.NeoPixel(pin13, 1)
 sensor_pir = pin15
 led_blanco = pin14
 
-if alerta():
+def alerta():
     # Sonar ring 2 veces
     music.play(music.RINGTONE, wait=True)
     sleep(100)
