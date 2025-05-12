@@ -8,7 +8,7 @@ import neopixel
 import music
 
 # Configuración de pins
-np = neopixel.NeoPixel(pin13, 1) 
+np = neopixel.NeoPixel(pin13, 6) 
 sensor_pir = pin15
 led_blanco = pin14
 
