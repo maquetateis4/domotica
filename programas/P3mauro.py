@@ -8,8 +8,8 @@ from microbit import *
 
 while True:
     if button_a.is_pressed():
-        pin14.write_digital(1)
-        sleep(500)
-        music.play(music.RINGTONE)
-        sleep
+        pin14.write_digital(1)  # Enciende el pin 14 (LED)
+        music.play(music.RINGTONE)   # Reproduce el tono RINGTONE
+        sleep(5000)   # Mantiene el LED encendido durante 5 segundos
+        pin14.write_digital(0)   # Apaga el pin 14 (LED)
 # -----------------------------------------------------------------------------------------------------------------------
