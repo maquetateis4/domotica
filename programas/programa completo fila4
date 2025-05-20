@@ -29,10 +29,10 @@ while True:
 
 while True:
     if button_a.is_pressed():
-        pin14.write_digital(1)  # Enciende el pin 14 (LED)
-        music.play(music.RINGTONE)   # Reproduce el tono RINGTONE
-        sleep(5000)   # Mantiene el LED encendido durante 5 segundos
-        pin14.write_digital(0)   # Apaga el pin 14 (LED)
+        pin14.write_digital(1)  # Acender o pin 14 LED
+        music.play(music.RINGTONE)   # Reproduce o tono RINGTONE
+        sleep(5000)   # Manten o LED acendido durante 5 segundos
+        pin14.write_digital(0)   # Apaga o pin 14 (LED)
 
     #programa 5
 
