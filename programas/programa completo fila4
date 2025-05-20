@@ -1,11 +1,12 @@
-#Programa 1 LED Neopixel 
+"""| 𝕄𝔸ℚ𝕌𝔼𝕋𝔸 𝕋𝔼𝕀𝕊 𝟜 |𝔽𝕖𝕔𝕙𝕒: 𝟝/𝟘𝟝/𝟚𝟝"""
+
+
 from microbit import *
 import neopixel
 import music
 
-np = neopixel.NeoPixel(pin13, 2)  # 2 LED neopixel conectados ao pin 13
+np = neopixel.NeoPixel(pin:-)13, 2)  # 2 LED neopixel conectados ao pin 13
 
-sensor_pir = pin15
 led = pin14 # LED branco conectado ao pin14
 np.clear()
 while True:
@@ -22,23 +23,29 @@ while True:
         np.show()  # Mostrar a cor nos neopixel
         led.write_digital(0)  # Apagar o LED normal
 
-    sleep(1000)  # Esperar 1 segundo
 
-    #programa 3 
-    
+
+    #Programa 3 reproduce musica si se presiona el boton A#
+from microbit import *
+import music
 
 while True:
     if button_a.is_pressed():
-        pin14.write_digital(1)  # Acender o pin 14 LED
+        pin14.write_digital(1)  # Encende o pin 14 LED
         music.play(music.RINGTONE)   # Reproduce o tono RINGTONE
         sleep(5000)   # Manten o LED acendido durante 5 segundos
         pin14.write_digital(0)   # Apaga o pin 14 (LED)
 
-    #programa 5
+    #Sistema de alarma con detección de  movemento#
 
+from microbit import *
+import neopixel
+import music
 
 # Configuración de pins
 np = neopixel.NeoPixel(pin13, 6) 
+sensor_pir = pin15
+led_blanco = pin14
 
 def modo_normal():
     display.show(Image.HOUSE)
