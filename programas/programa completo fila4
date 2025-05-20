@@ -5,7 +5,7 @@ from microbit import *
 import neopixel
 import music
 
-np = neopixel.NeoPixel(pin:-)13, 2)  # 2 LED neopixel conectados ao pin 13
+np = neopixel.NeoPixel(pin13, 2)  # 2 LED neopixel conectados ao pin 13
 
 led = pin14 # LED branco conectado ao pin14
 np.clear()
@@ -25,9 +25,7 @@ while True:
 
 
 
-    #Programa 3 reproduce musica si se presiona el boton A#
-from microbit import *
-import music
+#Programa 3 reproduce musica si se presiona el boton A#
 
 while True:
     if button_a.is_pressed():
@@ -36,11 +34,7 @@ while True:
         sleep(5000)   # Manten o LED acendido durante 5 segundos
         pin14.write_digital(0)   # Apaga o pin 14 (LED)
 
-    #Sistema de alarma con detección de  movemento#
-
-from microbit import *
-import neopixel
-import music
+#Sistema de alarma con detección de  movemento#
 
 # Configuración de pins
 np = neopixel.NeoPixel(pin13, 6) 
