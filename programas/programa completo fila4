@@ -34,7 +34,7 @@ while True:
         sleep(5000)   # Manten o LED acendido durante 5 segundos
         pin14.write_digital(0)   # Apaga o pin 14 (LED)
 
-#Sistema de alarma con detección de  movemento#
+#Programa 5 Sistema de alarma con detección de  movemento#
 
 # Configuración de pins
 np = neopixel.NeoPixel(pin13, 6) 
